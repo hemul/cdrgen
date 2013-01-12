@@ -35,7 +35,7 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>com.bh.cdrgen.MainApp</mainClass>
+              <mainClass>com.bh.cdrgen.app.MainApp</mainClass>
             </manifest>
           </archive>
         </configuration>
