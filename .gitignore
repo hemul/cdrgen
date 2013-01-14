@@ -3,3 +3,4 @@
 .settings/
 target/
 etc/
+dependency-reduced-pom.xml
