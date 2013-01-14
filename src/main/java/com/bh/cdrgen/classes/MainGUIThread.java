@@ -6,7 +6,7 @@ import com.bh.cdrgen.gui.MainAppWindow;
 
 public class MainGUIThread implements Runnable{
 	
-	private final String PATH_TO_GLOBAL_CONFIGURATION_FILE = "/home/hemul/Programming/workspace/cdrgen/etc/cdrgen.xml";
+	private final String PATH_TO_GLOBAL_CONFIGURATION_FILE = "..\\etc\\cdrgen.xml"; // Change to "..\\etc\\cdrgen" in release.
 	
 	public void run() {
 		try {
@@ -26,8 +26,16 @@ public class MainGUIThread implements Runnable{
 		
 		String path = PATH_TO_GLOBAL_CONFIGURATION_FILE.substring( 0, indx);
 		String fileName = PATH_TO_GLOBAL_CONFIGURATION_FILE.substring( indx+1 );
+
+		//		Check current directory.
+//		File currentDir = new File(".");
+//		try {
+//			System.out.println(currentDir.getCanonicalPath());
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
 		
-		File directory = new File( path );
+		File directory = new File(path);
 		
 		boolean found = false;
 		for( File f : directory.listFiles() )
