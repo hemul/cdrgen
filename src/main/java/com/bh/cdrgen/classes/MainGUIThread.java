@@ -6,8 +6,8 @@ import com.bh.cdrgen.gui.MainAppWindow;
 
 public class MainGUIThread implements Runnable{
 	
-	private final String PATH_TO_GLOBAL_CONFIGURATION_FILE = "..\\etc\\cdrgen.xml"; // Change to "..\\etc\\cdrgen" in release.
-	
+//	private final String PATH_TO_GLOBAL_CONFIGURATION_FILE = "..\\etc\\cdrgen.xml"; // Windows
+	private final String PATH_TO_GLOBAL_CONFIGURATION_FILE = "../etc/cdrgen.xml";   // Linux
 	public void run() {
 		try {
 			MainAppWindow mainWindow = new MainAppWindow();
